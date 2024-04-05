@@ -14,8 +14,9 @@ function createGallery(array){
         
         </a> </li>`;
     }).join("");
+    
 }
 
 galleryContainer.insertAdjacentHTML("beforeend",photosMarkup);
-const galleryHandler=new SimpleLightbox(".gallery a",{captionData:"alt", captionDelay:250});
+const galleryHandler=new SimpleLightbox(".gallery a", {captionsData: "alt", captionDelay:150});
 galleryHandler.on(show.simplelightbox);
